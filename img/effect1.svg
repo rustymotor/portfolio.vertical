@@ -1,0 +1,23 @@
+<svg width="340" height="227" viewBox="0 0 340 227" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path class="line1" d="M2 225.5C31 205 78.6 150.4 37 96C60 104 142 91.5 143 2C153 18.5 186.5 91.5 267 43.5C268.5 78 257.5 111 338.5 124.5" stroke="#474747" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<script>
+const eff1 = document.querySelector('.line1');
+const tL = eff1.getTotalLength();
+const keyframe = [
+  {
+    strokeDasharray: tL + "px",
+    strokeDashoffset: tL + "px"
+  },
+  {
+    strokeDasharray: tL + "px",
+    strokeDashoffset: "0px"
+  }
+];
+const dur = {
+  duration: 1500,
+  iterations: Infinity,
+   fill: "backwards",
+};
+eff1.animate(keyframe, dur);
+</script>
+</svg>

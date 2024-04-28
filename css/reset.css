@@ -1,0 +1,158 @@
+@charset "utf-8";
+@import url(https://qwerewqwerew.github.io/source/style/reset.css);
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing:border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,blockquote:after,q:before,q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* 최상위선택자 */
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  line-height: 1.75;
+  font-family: "Pretendard", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* ====================================
+    ======= comment ======    
+==================================== */
+
+:root {
+  /* 전역변수 */
+  --primary1: #71E618;
+  --primary2: #48940f;
+  --primary3: #f2dc99;
+  --secondary: #404040;
+  --accent: #ec9037;
+  --text1: #333;
+  --text2: #555;
+  --text3: #888;
+  --white: #fff;
+  /* --link: #2761ff; */
+  --col: 8.2rem;
+  --row: 2.8rem;
+  --gu: 1rem;
+  --n10: 10; /* col 개수 */
+  --n9: 9;
+  --n8: 8;
+  --n7: 7;
+  --n6: 6;
+  --n5: 5;
+  --n4: 4;
+  --n3: 3;
+  --n2: 2;
+  --n1: 1;
+  --unit10: calc(var(--unit) * var(--n10));
+  --unit9: calc(var(--unit) * var(--n9));
+  --unit8: calc(var(--unit) * var(--n8));
+  --unit7: calc(var(--unit) * var(--n7));
+  --unit6: calc(var(--unit) * var(--n6));
+  --unit5: calc(var(--unit) * var(--n5));
+  --unit4: calc(var(--unit) * var(--n4));
+  --unit3: calc(var(--unit) * var(--n3));
+  --unit2: calc(var(--unit) * var(--n2));
+  --unit1: calc(var(--unit) * var(--n1));
+  --unit: calc(var(--col) + var(--gu));
+}
+a {
+  text-decoration: none;
+  font-family: "Pretendard", "Arial", sans-serif;
+  color: var(--link);
+  font-size: 1.6rem;
+}
+body {
+  font-family: "Pretendard", "Arial", sans-serif;
+}
+.h1,
+h1 {
+  font-size: 4.8rem;
+  font-weight: 200;
+}
+.h2,
+h2 {
+  font-size: 3.2rem;
+  font-weight: 300;
+}
+.h3,
+h3 {
+  font-size: 2.6rem;
+  font-weight: 500;
+}
+.h4,
+h4 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.h5,
+h5 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.h6,
+h6 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.text {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.75;
+}
+.link {
+  font-size: 1.6rem;
+  text-decoration: underline;
+
+}
+.fx {
+  display: flex;
+}
+.pr {
+  position: relative;
+}
+.pa {
+  position: absolute;
+}
+p{
+  padding:5px;
+}
+/* ====================================
+    ======= global classes ======    
+==================================== */
+
+

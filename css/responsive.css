@@ -1,0 +1,209 @@
+@media only screen and (max-width:768px) {
+    nav{
+        display:none;
+    }
+       
+    .visual>img {
+        display: none;
+    }
+    .lottie2{
+        overflow:hidden;
+        display:none;
+    }
+    body {
+        overflow-y: scroll;
+      }
+    ::-webkit-scrollbar {
+        width: 15px;
+        background-color: #e3e3e3;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background: #84c7ff;
+      }
+      
+}
+
+@media only screen and (min-width:769px) and (max-width:1023px) {
+   
+    .visual>img {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:1023px) and (max-width:1200px) {
+    #panel-2{
+        padding:15vw 0 0 20vw;
+    }
+    #panel-2 .visual2{
+        display:none;
+    }
+    #panel-3 .pj1_visual{
+        padding: 10vw 0 0 0;
+        width: 70vw;
+        height: 80vh;
+        top: 15%;
+        left: 15%;
+        background: url(../img/pj1.png) left/cover no-repeat;
+    }
+    .pj_box p:nth-of-type(1) {
+        position: relative;
+        font-size: 2vh;
+        line-height: 2.7rem;
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .pj1_box h2:after {
+        position: absolute;
+        content: '리디자인 / 반응형';
+        top: 5.5%;
+        left: 40%;
+        color: var(--color2);
+        font-weight: 400;
+        font-size: 2rem;
+    }
+    .sec1 .left {
+        position: absolute;
+        width: 45%;
+        height: 100%;
+        left: 45%;
+    }
+    .sec1 .left .mockup.pc {
+        width: 100%;
+        height: min(52rem, 70%);
+        margin-top:10vh;
+        z-index: 3;
+    }
+    /* 워너디자인 파트 */
+    .pj2_box {
+        position: absolute;
+        top: 30%;
+        left: 80%;
+        width: 40vw;
+        height: 40vh;
+        z-index: 60000;
+    }
+    .pj2_box h2:after {
+        position: absolute;
+        content: '반응형';
+        top: 5.5%;
+        left: 45%;
+        color: var(--color2);
+        font-weight: 400;
+        font-size: 2rem;
+    }
+    .sec2 .left {
+        position: absolute;
+        width: 45%;
+        height: 100%;
+        left: 0%;
+    }
+    .sec2 .left .mockup.pc {
+        width: 100%;
+        height: min(52rem, 70%);
+        margin-top:10vh;
+        z-index: 3;
+    }
+    /* 카트라이더 */
+    .project3 .pj3_visual {
+        position: absolute;
+        background: url(../img/pj3.png) top / contain no-repeat;
+        width: 130rem;
+        height: 100vh;
+        top: 0;
+        left: -0%;
+        z-index: 3;
+    }
+    .pj3_box {
+        position: absolute;
+        top: 30%;
+        left: 120%;
+        width: 41vw;
+        height: 40vh;
+        z-index: 6000000;
+    }
+    .sec3 .left {
+        position: absolute;
+        width: 45%;
+        height: 100%;
+        left: 180%;
+        z-index: 10220;
+    }
+    .pj3_box h2:after {
+        position: absolute;
+        content: 'SCSS';
+        top: 5.5%;
+        left: 40%;
+        color: var(--color2);
+        font-weight: 400;
+        font-size: 2rem;
+    }
+    .sec3 .left .mockup.pc {
+        width: 100%;
+        height: min(52rem, 70%);
+        margin-top:10vh;
+        z-index: 3;
+    }
+    /* 피그마 */
+    .figma_mockup {
+        position: relative;
+        width: 400px;
+        height: 777px;
+        background: url(../img/phone_figma.png) no-repeat;
+        background-size: 400px 777px;
+        overflow: hidden;
+        z-index: 100;
+        margin: 10vh 0 0 70vw;
+    }
+    .figma_word {
+        position: absolute;
+        left: 120%;
+        top: 10%;
+    }
+    /* 스킬 */
+    .style10{
+        display:none;
+    }
+    body {
+        overflow-y: scroll;
+      }
+      
+    ::-webkit-scrollbar {
+        width: 15px;
+        background-color: #e3e3e3;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background: #84c7ff;
+      }
+
+
+@media only screen and (min-width:1401px) {
+    #panel-1 .title:before{
+        content:'';
+        position:absolute;
+        background: url(../img/star_soft.png) top/contain;
+        top:0%;
+        right:-30%;
+        width:10rem;
+        height:10rem;
+        z-index:1;
+        animation: star 2s ease-in-out infinite;
+        }
+        #panel-1 .title h1:before{
+        content:'';
+        position:absolute;
+        background: url(../img/star_soft.png) top/contain;
+        top:-100%;
+        right:-35%;
+        width:6vh;
+        height:6vh;
+        z-index:-1;
+        animation: star 3s ease-in-out infinite;
+        
+        }
+
+        body {
+            overflow-y: scroll;
+          }
+}}
