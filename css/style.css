@@ -607,10 +607,10 @@ button {
 .project3 .pj3_visual {
   position: absolute;
   background: url(../img/pj3.png) top/contain no-repeat;
-  width: 140rem;
+  width: 100rem;
   height: 95vh;
   top: 5%;
-  left: 5%;
+  left: 25%;
   z-index: 3;
 }
 .project3 .pj3_visual:after {
@@ -619,7 +619,7 @@ button {
   content: "PROJECT3";
   font-family:'arimo',sans-serif;
   top: 20%;
-  left:10%;
+  left:-10%;
   font-size: 5rem;
   z-index: 4;
   -webkit-text-stroke: 1px #000;

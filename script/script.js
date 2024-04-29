@@ -160,7 +160,7 @@ const fn1 = () => {
 			start: 'top bottom',
 			end: 'bottom top',
 			// markers: true,
-			//scrub: true,
+			scrub: true,
 		},
 	});
 };
@@ -175,7 +175,7 @@ const fn2 = () => {
 			start: '20% bottom',
 			end: 'bottom top',
 			// markers: true,
-			//scrub: true,
+			scrub: true,
 		},
 	});
 };
@@ -192,27 +192,27 @@ const fn3 = () => {
         start: "left 70%",
 		end: 'center 90%',
 		// markers:true, 
-		// scrub:1,
+		// scrub:true,
 		}
 
 	});
 
 };
 
-const fn4 = () => {
-	gsap.from('.project_box>.fx', {
-		xPercent: -30,
-		ease: 'none',
-		duration: 1,
-		scrollTrigger: {
-			trigger: '.project_box',
-			start: 'top bottom',
-			end: 'bottom top',
-			// markers: true,
-			//scrub: true,
-		},
-	});
-};
+// const fn4 = () => {
+// 	gsap.from('.project_box>.fx', {
+// 		x: 30,
+// 		ease: 'none',
+// 		duration: 1,
+// 		scrollTrigger: {
+// 			trigger: '.project_box',
+// 			start: 'top bottom',
+// 			end: 'bottom top',
+// 			// markers: true,
+// 			// scrub: true,
+// 		},
+// 	});
+// };
 const fn5 = () => {
 	gsap.from('.pj1_box',{
 		y:100,
@@ -221,7 +221,6 @@ const fn5 = () => {
 		scrollTrigger:
 		{
 		trigger:'.pj1_box',
-        containerAnimation: tween,
         start: "left 70%",
 		end: 'center 90%',
 		// markers:true, 
@@ -254,17 +253,18 @@ const fn6 = () => {
 };
 const fn5x = () => {
 	gsap.from('.sec1',{
-        x:100,
+        xPercent:30,
 		opacity:0,
 		ease: 'none',
 		scrollTrigger:
 		{
 		trigger:'.sec1',
-        start: "right 70%",
-		end: 'center 90%',
-		// markers:true,
-		// scrub:1,
-		},
+        containerAnimation: tween,
+        start: "top bottom",
+		end: 'bottom top',
+		// markers:true, 
+		// scrub:true,
+		}
 
 	});
 
@@ -462,7 +462,7 @@ ScrollTrigger.create({
 $(function () {
 	var charts = $('.charts');
 	var chart = $('.chart');
-	var chartOST = charts.offset().left;
+	var chartOST = charts.offset().top;
 	// var excuted = false;
 
 	$(window).scroll(function () {
